@@ -2,6 +2,18 @@
 <html>
     <head>
         <title>Contact Us</title>
+        <style>
+             input, select {
+                margin-bottom: 15px;
+                margin-top: 15px;
+            }
+            div {
+                margin-left: 25px;
+            }
+            textarea {
+                vertical-align: top;
+            }
+        </style>
     </head>
     <body>
     <form action="#" method="POST">
@@ -28,19 +40,20 @@
                 <option value="SelectAReason">Select a Reason</option>
                 <option value="SoftareSupport">Software Support</option>
                 <option value="HardwareSupport">Hardware Support</option>
-                <option value="InformationRequest">Information Request</option>>
-            </select
+                <option value="InformationRequest">Information Request</option>
+            </select>
         </div>
         <div>
-            <label id="AdditionalInformation" for="Additional Information">Additional Information:</label>
-            <textarea name="Additionalnformation"></textarea><br/>
+            <label id="AdditionalInformation" for="License">Additional Information:</label>
+            <textarea name="AdditionalInformation" rows="4" cols="20"></textarea><br/>
         </div>
         <div>
-            <input type="checkbox" name="Terms" value="Terms" checked/>I have read the terms of service.<br/>
+            <label id="TermsOfService" for="TermsOfService">I have read the terms of service:</label>
+            <input type="checkbox" name="Terms" value="Terms" checked/>
         </div>
         <div>
             <input type="submit"/>
         </div>
-        </form>
+    </form>
     </body>
 </html>
