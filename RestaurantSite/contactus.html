@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <style>
+        #menubar {
+            padding: 5px 5px 5px 5px;
+        }
+        input, select {
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        textarea {
+                vertical-align: top;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h2 align="center">Coop's Sandwich Shop</h2>
+        </div>
+        <div id="menubar" align="left">
+            <hr/>
+            <a href="index.html">Home</a> |
+            <a href="menu.html">Menu</a> |
+            <a href="contactus.html">Contact Us</a>
+            <hr/>
+        </div>
+            <form action="#" method="POST" align="center">
+            <div>
+                <label id="NameLabel" for="Name">Name:</label>
+                <input id="Name" name="Name" type="text"/>
+            </div>
+        <div>
+            <label id="EmailLabel" for="Email">Email:</label>
+            <input id="Email" name="Email" type="text"/>
+        </div>
+        <div>
+            <label id="PhoneLabel" for="Phone">Phone:</label>
+            <input id="Phone" name="Phone" type="text"/>
+        </div>
+        <div>
+            <label id="Reason" for="Reason">Reason for Inquiry:</label>
+            <select name="Reason">
+                <option value="SelectAReason">Catering</option>
+                <option value="SoftareSupport">Private Party</option>
+                <option value="HardwareSupport">Feedback</option>
+                <option value="InformationRequest">Other</option>
+            </select>
+        </div>
+        <div>
+            <label id="AdditionalInformation" for="License">Additional Information:</label>
+            <textarea name="AdditionalInformation" rows="4" cols="20"></textarea><br/>
+        </div>
+        <div>
+            <label id="RestaurantVisit" for="RestaurantVisit">Have you been to the restaurant before?</label>
+            <input id="No" name="No" type="radio" checked/>No
+            <input id="Yes" name="Yes" type="radio"/>Yes
+        </div>
+        <div>
+        <div>
+            <label id="Contact" for="Contact">Best days to contatct you:</label>
+            <input type="checkbox" name="M" value="M" />M
+            <input type="checkbox" name="T" value="T" />T
+            <input type="checkbox" name="W" value="W" />W
+            <input type="checkbox" name="Th" value="Th" />Th
+            <input type="checkbox" name="F" value="F" />F
+        </div>
+            <input type="Submit" value="Send Request"/>
+        </div>
+            </form>
+        <div>
+            <hr/>
+            <p align="center">Northwood, NH 03261</p>
+            <p align="center">603-123-4567</p>
+            <hr/>
+        </div>
+    </body>
+</html>
