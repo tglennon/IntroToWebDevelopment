@@ -2,19 +2,28 @@
 <html>
     <head>
         <title>Coop's Sandwich Shop Menu</title>
+        <link href="css/restaurantStyles.css" 
+        rel="stylesheet" 
+        type="text/css" />
         <style>
-        #menubar {
-            padding: 5px 5px 5px 5px;
-        }
             td, tr {
                 text-align: center;
                 padding: 15px;
+            }
+            table {
+                width: 100%;
+            }
+        .SandwichName {
+            font-weight: bold;
+        }
+            h2 {
+                text-align: center;
             }
         </style>
     </head>
     <body>
         <div>
-            <h2 align="center">Coop's Sandwich Shop</h2>
+            <h2>Coop's Sandwich Shop</h2>
         </div>
         <div id="menubar" align="left">
             <hr/>
@@ -23,12 +32,12 @@
             <a href="contactus.html">Contact Us</a>
             <hr/>
         </div>
-        <table width="100%">
+        <table>
             <tbody>
                 <tr>
-                    <td><b>Coop's PBJ</b></td>
-                    <td><b>Coop's Ham and Cheese</b></td>
-                    <td><b>Coop's Italian</b></td>
+                    <td class="SandwichName">Coop's PBJ</td>
+                    <td class="SandwichName">Coop's Ham and Cheese</td>
+                    <td class="SandwichName">Coop's Italian</td>
                 </tr>
                 <tr>
                     <td>Made with our house-made peanut butter and served<br/> on toasted house-baked honey white bread</td>
@@ -36,9 +45,9 @@
                     <td>Spicy capicola ham, mortadella, genoa salami, provolone,<br/> roma tomatoes, green leaf lettuce, and a red<br/> pepper relish vinaigrette in an organic wheat bread.</td>
                 </tr>
                 <tr>
-                    <td><b>Coop's Famous Roast Beef</b></td>
-                    <td><b>Coop's BLT</b></td>
-                    <td><b>Coop's Turkey and Swiss</b></td>
+                    <td class="SandwichName">Coop's Famous Roast Beef</td>
+                    <td class="SandwichName">Coop's BLT</td>
+                    <td class="SandwichName">Coop's Turkey and Swiss</td>
                 </tr>
                 <tr>
                 <td> House sirloin roast, sharp cheddar, roma tomatoes,<br/> green leaf lettuce, and countryside mustard<br/> on tomato rosemary roll.</td>
@@ -47,10 +56,10 @@
                 </tr>
         </table>
         </tbody>
-        <div>
+        <div id="footer">
             <hr/>
-            <p align="center">Northwood, NH 03261</p>
-            <p align="center">603-123-4567</p>
+            <p>Northwood, NH 03261</p>
+            <p>603-123-4567</p>
             <hr/>
         </div>
     </body>
