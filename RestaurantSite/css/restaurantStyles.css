@@ -1,7 +1,9 @@
 #menubar {
-    padding: 5px 5px 5px 5px;
+    padding: 0px 0px 0px 0px;
+    background-color: white;
        }
 #footer {
-    padding: 5px 5px 5px 5px;
+    padding: 0px 0px 0px 0px;
     text-align: center;
+    background-color: white;
        }
