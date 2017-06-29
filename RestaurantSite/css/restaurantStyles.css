@@ -7,3 +7,18 @@
     text-align: center;
     background-color: white;
        }
+
+a:link {
+    color: blue;
+
+}
+a:visited {
+    color: red;
+
+}
+a:hover {
+    font-weight: bold;
+}
+a:active {
+    text-decoration: none;
+}
