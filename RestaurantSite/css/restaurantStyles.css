@@ -1,14 +1,13 @@
-#menubar {
+/*#menubar {
     padding: 0px 0px 0px 0px;
     background-color: white;
-       }
+       } */
 #footer {
     padding: 0px 0px 0px 0px;
     text-align: center;
-    background-color: white;
        }
 
-a:link {
+ a:link {
     color: blue;
 
 }

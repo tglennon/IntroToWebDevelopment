@@ -2,81 +2,108 @@
 <html>
     <head>
         <title>Coop's Sandwich Shop Menu</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <!-- Bootstrap -->
         <link href="css/restaurantStyles.css" 
         rel="stylesheet" 
         type="text/css" />
         <style>
-            td, tr {
+            table, th {
                 text-align: center;
-                padding: 15px;
-            }
-            table {
-                width: 100%;
-                
             }
         .SandwichName {
             font-weight: bold;
             font-size: large;
         }
-            h2 {
+            h2, h3, h4{
                 text-align: center;
                 font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
-        #menuItems {
-            background-color:gainsboro;
-        }
         #beverageList {
             text-align: center;
         }
         #beverageList ul {
             display: inline-block;
         }
+        #title {
+            text-align: center;
+            font-size: large;
+            padding: 15px;
+            font-weight: bold;
+        }
         </style>
     </head>
     <body>
-        <div>
-            <h2>Coop's Sandwich Shop</h2>
+        <div class="container">
+            <div>
+                <h2>Coop's Sandwich Shop</h2>
+            </div>
+            <br/>
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"><span></a></li>
+                    <li class="active"><a href="menu.html">Menu</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="menuItems">
+                <div class="row">
+                    <div id="title" class"col-sm-12">
+                        Sandwiches
+                    </div>
+                </div>
+            <div class="row">
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tr>
+                                    <th class="col-sm-4">Coop's PBJ</th>
+                                    <th class="col-sm-4">Coop's Ham and Cheese</th>
+                                    <th class="col-sm-4">Coop's Italian</th>
+                                </tr>
+                                <tr>
+                                    <td class="col-sm-4">Made with our house-made peanut butter and served on toasted house-baked honey white bread.</td>
+                                    <td class="col-sm-4">All natural ham, sharp cheddar, green leaf lettuce, roma tomatoes, and garlic aioli on pretzel roll.</td>
+                                    <td class="col-sm-4">Spicy capicola ham, mortadella, genoa salami, provolone, roma tomatoes, green leaf lettuce, and a red pepper relish vinaigrette in an organic wheat bread.</td>
+                                </tr>
+                                <tr>
+                                    <th class="col-sm-4">Coop's Famous Roast Beef</th>
+                                    <th class="col-sm-4">Coop's BLT</th>
+                                    <th class="col-sm-4">Coop's Turkey and Swiss</th>
+                                </tr>
+                                <tr>
+                                    <td class="col-sm-4">House sirloin roast, sharp cheddar, roma tomatoes,<br/> green leaf lettuce, and countryside mustard<br/> on tomato rosemary roll.</td>
+                                    <td class="col-sm-4">This double-decker sandwich has six strips of crispy hickory-smoked bacon, fresh lettuce, tomato and mayonnaise on white toast. Add< avocado for an additional charge.</td>
+                                    <td class="col-sm-4">Oven-roasted turkey breast, applewood-smoked bacon, smoked Gouda, lettuce, vine-ripened tomatoes and signature sauce with salt and pepper on thin-sliced Tomato Basil.</td>
+                                </tr>
+                            </table>
+                        </div>
+            </div>
+            <div class="row">
+                <div id="title" class"col-sm-12">
+                    Beverages
+                </div>
+            </div>
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tr>
+                            <td class="col-sm-2">Bottled Water - $1.25</td>
+                            <td class="col-sm-2">Root Beer - $3.00</td>
+                        </tr>
+                        <tr>
+                            <td class="col-sm-2">Lemonade - $1.00</td>
+                            <td class="col-sm-2">Iced Tea - $1.25</td>
+                        </tr>
+                    </table
+            </div>
         </div>
-        <div id="menubar" align="left">
-            <hr/>
-            <a href="index.html">Home</a> |
-            <a href="menu.html">Menu</a> |
-            <a href="contactus.html">Contact Us</a>
-            <hr/>
-        </div>
-        <div id="menuItems">
-        <table>
-                <tr>
-                    <td class="SandwichName">Coop's PBJ</td>
-                    <td class="SandwichName">Coop's Ham and Cheese</td>
-                    <td class="SandwichName">Coop's Italian</td>
-                </tr>
-                <tr>
-                    <td>Made with our house-made peanut butter and served<br/> on toasted house-baked honey white bread</td>
-                    <td>All natural ham, sharp cheddar, <br/>green leaf lettuce, roma tomatoes,<br/> and garlic aioli on pretzel roll.</td>
-                    <td>Spicy capicola ham, mortadella, genoa salami, provolone,<br/> roma tomatoes, green leaf lettuce, and a red<br/> pepper relish vinaigrette in an organic wheat bread.</td>
-                </tr>
-                <tr>
-                    <td class="SandwichName">Coop's Famous Roast Beef</td>
-                    <td class="SandwichName">Coop's BLT</td>
-                    <td class="SandwichName">Coop's Turkey and Swiss</td>
-                </tr>
-                <tr>
-                <td> House sirloin roast, sharp cheddar, roma tomatoes,<br/> green leaf lettuce, and countryside mustard<br/> on tomato rosemary roll.</td>
-                <td>This double-decker sandwich has six strips of crispy<br/> hickory-smoked bacon, fresh lettuce, tomato <br/>and mayonnaise on white toast. Add<br/> avocado for an additional charge</td>
-                <td>Oven-roasted turkey breast, applewood-smoked bacon,<br/>smoked Gouda, lettuce, vine-ripened tomatoes<br/> and signature sauce with salt and pepper<br/> on thin-sliced Tomato Basil.</td>
-                </tr>                
-        </table>
-        <div id="beverageList">
-            <h3>Beverage Selections</h3>
-            <ul>
-                <li>Bottled Water - $1.25</li>
-                <li>Root Beer - $3.00</li>
-                <li>Lemonade - $1.00</li>
-                <li>Iced Tea - $1.25</li>
-            </ul>
-        </div>
-        </div>
+        <!--footer back here -->
         <div id="footer">
             <hr/>
             <p>Northwood, NH 03261</p>
