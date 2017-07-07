@@ -22,10 +22,8 @@ function resetForm() {
 }
 
 function validateValues() {
-    clearErrors();
     var num1 = document.forms["sampleAudition"]["startNum"].value;
     var num1Int = parseInt(document.forms["sampleAudition"]["startNum"].value);
-    var numIntLoop = parseInt(document.forms["sampleAudition"]["startNum"].value);
     var num2 = document.forms["sampleAudition"]["endNum"].value;
     var num2Int = parseInt(document.forms["sampleAudition"]["endNum"].value);
     var num3 = document.forms["sampleAudition"]["step"].value;
@@ -64,7 +62,7 @@ function validateValues() {
     document.getElementById("currentStep").textContent = num3;
     
     while (num1Int < num2Int) {
-            if (num1Int%2 == 0 && num1Int !== numIntLoop) {
+            if (num1Int%2 == 0) {
             evenNums.push(num1Int);
         }
         num1Int += num3Int;

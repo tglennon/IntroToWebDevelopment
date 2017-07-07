@@ -15,7 +15,7 @@
 <!-- Form -->
 <div class="container-fluid">
     <h1>Sample</h1>
-    <form name="sampleAudition" onsubmit="return validateValues();"onreset="resetForm();" class="form-inline">
+    <form name="sampleAudition" onsubmit="return validateValues();" class="form-inline">
         <div class="form-group">
             <label for="startingNumber">Starting Number</label>
             <input type="number" class="form-control" id="startNum">
@@ -29,7 +29,7 @@
             <input type="number" class="form-control" id="step">
         </div>
         <button type="submit" id="submitButton" class="btn btn-default">Display Events</button>
-       <button type="reset" id="resetButton" onClick="window.location.reload()" class="btn">Reset</button>
+       <button type="reset" id="resetButton" class="btn">Reset</button>
     </form>
 </div>
 <!-- Form -->
@@ -43,5 +43,7 @@
         <br/>
         <p><span id="results"></span></p>
 </div> 
+
+
 </body>
 </html>
